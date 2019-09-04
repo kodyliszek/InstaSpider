@@ -1,5 +1,5 @@
 """
-WSGI config for instaspider project.
+WSGI config for fff project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
