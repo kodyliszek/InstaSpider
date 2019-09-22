@@ -3,6 +3,6 @@ from django.views import View
 
 
 class TarantulaView(View):
-    def get(self, request):
+    def get(self, request, phrase):
         # <view logic>
-        return HttpResponse('result')
+        return HttpResponse('result: {}'.format(phrase))

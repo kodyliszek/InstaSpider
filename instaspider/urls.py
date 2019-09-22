@@ -20,5 +20,5 @@ from tarantula.views import TarantulaView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tarantula/', TarantulaView.as_view(), name='tarantula'),
+    path('tarantula/<str:phrase>', TarantulaView.as_view(), name='tarantula'),
 ]
