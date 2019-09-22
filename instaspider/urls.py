@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from tarantula.views import TarantulaView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('tarantula/', TarantulaView.as_view(), name='tarantula'),
 ]
